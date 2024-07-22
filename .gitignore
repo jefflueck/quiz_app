@@ -10,6 +10,9 @@
 .svn/
 migrate_working_dir/
 
+# Ignore fonts folder
+fonts/
+
 # IntelliJ related
 *.iml
 *.ipr
