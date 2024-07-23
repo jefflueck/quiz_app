@@ -9,7 +9,11 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/images/quiz-logo.png', width: 300),
+          Image.asset(
+            'assets/images/quiz-logo.png',
+            width: 300,
+            color: const Color.fromRGBO(255, 255, 255, 0.6),
+          ),
           const SizedBox(height: 80),
           const Text(
             'Learn Flutter the Fun Way!',
@@ -19,7 +23,7 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          OutlinedButton(
+          OutlinedButton.icon(
             onPressed: () {
               print('Start Quiz button pressed');
             },
@@ -31,7 +35,8 @@ class StartScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
             ),
-            child: const Text('Start Quiz'),
+            icon: const Icon(Icons.play_arrow),
+            label: const Text('Start Quiz'),
           ),
         ],
       ),
