@@ -21,6 +21,7 @@ class _QuizState extends State<Quiz> {
   // final List<String> selectedAnswers = [];
   // * If we take out the final keyword the list will not continue to grow when we start the app over.
   List<String> selectedAnswers = [];
+
   // * Alternative method of displaying the screen
   var activeScreen = 'start-screen';
 
