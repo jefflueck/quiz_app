@@ -50,7 +50,7 @@ class _QuizState extends State<Quiz> {
     if (selectedAnswers.length == questions.length) {
       setState(() {
         // * if we choose to eliminate the final keyword from the list we need to clear the list here.
-        selectedAnswers = [];
+        // selectedAnswers = [];
         // here we are resetting the set state of active screen to the start screen when our answers length we stored matches our questions length.
         activeScreen = 'results-screen';
         // * We need this to clear the list of selected answers when we start the quiz over or we break this logic on the second run through the quiz if we keep the final keyword in the selectedAnswers method above this code in line 22.
